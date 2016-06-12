@@ -18,13 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-FKObject *object = [[FKObject alloc] init];
-NSLog(@"%ld", object.fk_retainCount);
-[object fk_retain];
-NSLog(@"%ld", object.fk_retainCount);
-[object fk_release];
-NSLog(@"%ld", object.fk_retainCount);
-[object fk_release];
+    FKObject *object = [[FKObject alloc] init];
+    NSLog(@"%ld", object.fk_retainCount);
+    [object fk_retain];
+    NSLog(@"%ld", object.fk_retainCount);
+    [object fk_release];
+    NSLog(@"%ld", object.fk_retainCount);
+    [object fk_release];
 }
 
 - (void)didReceiveMemoryWarning {
